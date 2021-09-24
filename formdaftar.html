@@ -14,11 +14,14 @@ body {
 
 /* Style the header */
 header {
-  background-color: #F0F8FF;
+  background-color: #4682B4;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
 }
 
 
@@ -28,7 +31,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#F0F8FF;
+  background-color: #333;
+}
 
 li {
   float: left;
@@ -54,7 +58,7 @@ article {
   float: left;
   padding: 20px;
   width: 100%;
-  background-color: #F0F8FF;
+  background-color: white;
   height: 800px; /* only for demonstration, should be removed */
 }
 
@@ -67,7 +71,7 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #F0F8FF;
+  background-color:#4682B4;
   padding: 1px;
   text-align: center;
   color: black;
@@ -92,27 +96,30 @@ footer {
 <section>
   <nav>
     <ul>
-     <li><a class="active" href="simantik.html"> Home </a></li>
+      <li><a  class="active" href="simantik.html"> Home </a></li>
       <li><a href="presensi.html"> Presensi </a></li>
-       <li><a href="formdaftar.html"> Daftar </a></li>
-      <li style="float:left"><a href="Login.html"> Login </a></li>
+      <li><a href="fromdaftar.html"> Masuk </a></li>
+      <li style="float:left"><a href="login.html"> Login </a></li>
     </ul>
   </nav>
   
   <article>
     <h1>FORM DAFTAR </h1>
  <form>
- <label>Nama Depan </label>
- <input type="text"> 
- <label>Nama Belakang </label>
+ <table>
+<tr>
+
+ <label>Nama depan </label>
+ <input type="text"> <br></br>
+ <label>Nama belakang </label>
  <input type="text"> <br><br>
  <label> Tempat Lahir</label>
  <input list="Tempat Lahir">
- <datalist id="Tempat Lahir">
-  <option value="Kab.Madiun">
-  <option value="Kab.Ngawi">
-  <option value="Kab.Magetan">
-  <option value="Kab.Pacitan">
+ <datalist id="tempat lahir">
+  <option value="Kab Madiun">
+  <option value="Kab Ngawi">
+  <option value="Kab Magetan">
+  <option value="Kab Pacitan">
   </datalist> <br><br>
 
   <label> Tanggal Lahir</label>
@@ -129,20 +136,22 @@ footer {
   <label> Olahraga </label>
   <input type="checkbox" id="Membaca" value="Membaca">
   <label> Membaca </label>
-  <input type="checkbox" id="Kluyuran" value="Kluyuran">
-  <label> Kluyuran </label> <br><br>
+  <input type="checkbox" id="Menulis" value="Menulis">
+  <label> Menulis </label> <br><br>
   <label> Alamat </label>
   <textarea rows="3"> </textarea> <br><br>
 
   <input type="Submit" value="Simpan">
   <input type="Reset">
+  
+  </tr>
 
  </form>
   </article>
 </section>
 
 <footer>
-  <p> Crated by <br> Devina Pratiwi </p>
+  <p> Created by Devina Pratiwi </p>
 </footer>
 
 </body>
